@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sansitaswashed/v1/BXR8vFfZifTZgFlDDLgNkBydPKTt3pVCeYWqJnZSW4ZpXT0few.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #403f3e;
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-family: "Sansita Swashed";
+}
+
+header {
+    padding-top: 20px;
+    width: 100%;
+    color: #fff;
+}
+
+header ul {
+    text-align: center;
+}
+
+header li {
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    padding: 0 5%;
+    font-size: 1.25rem;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.25rem;
+}
+
+footer ul {
+    margin: 0;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    margin: 15px 20px 0 20px;
+}
+
+.main {
+    margin: 50px auto;
+    min-width: 250px;
+    max-width: 60%;
+    height: 400px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+    background-image: url("./images/pitstop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 400px;
+}
+
+.gallery {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    margin-bottom: 15px;
+}
+
+.gallery img {
+    width: 48%;
+    margin: 0px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery {
+        width: 100%;
+    }
+
+    footer li {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header ul {
+        margin-top: 30px;
+    }
+
+    header li {
+        display: block;
+        padding: 0;
+    }
+
+    header h1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .gallery img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header li {
+        padding: 0 3%;
+        margin-bottom: 10px;
+    }
+}
+
